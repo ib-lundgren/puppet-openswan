@@ -23,7 +23,7 @@ class openswan::params {
 
   case $::operatingsystem {
     debian,ubuntu: {
-      $package_list = ['libgmp3c2', 'openswan', 'lsof']
+      $package_list = ['libgmp3-dev', 'openswan', 'lsof']
       $service_name = 'ipsec'
     }
     default: { }
